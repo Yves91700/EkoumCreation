@@ -1,8 +1,239 @@
+/***************************************************** base ********************************************************/
 
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 65%;
+}
 
 body {
-    background-color: rgb(191, 191, 253);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 1.6rem;
+  color: black;
+  margin: 0;
+  line-height: 1.6;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+}
+a {
+    text-decoration: none;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid_item {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 1rem;
+}
+@media screen and (min-width:750px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    
+  }  
+  .grid_item {
+    max-width: 50%;
+  }
+}
+.container {
+   padding: 1rem 2rem;
+    
+}
+
+
+
+/******************************************** partie header ********************************************/
+.header {
+    width: 100%;
+    border: 1px solid #555555;
+    background: violet;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar li {
+display: inline-flex;
+align-items: center;
+}
+
+.socials-right li {
+    display: inline-flex;
+}
+
+/* media queries partie header  */
+@media screen and (max-width:749px){
+   
+}
+
+@media screen and (min-width:750px){
+    
+  
+}
+
+
+/*********************************************** partie hero ***********************************************/
+
+.hero {
+    background: #f5f5f5;
+}
+
+
+
+
+
+
+/* media queries partie hero */
+@media screen and (max-width:749px){
+   
+}
+
+@media screen and (min-width:750px){
+    
+  
+}
+
+/******************************************* media queries partie about  *************************************/
+.about {
+    background: violet;
+    color: black;
+}
+
+/* media queries partie about  */
+@media screen and (max-width:749px){
+    .about .grid_item {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width:750px){
+    
+    .about .grid_item {
+        max-width: 25%;
+        padding: 1rem;
+    }
+}
+
+/* partie services */
+.services {
+    background: #dcd2d2;
+    color: #000;
+}
+
+
+
+/* media queries partie services  */
+@media screen and (max-width:749px){
+  
+}
+
+@media screen and (min-width:750px){
+    
+    .services .grid_item {
+        max-width: 50%;
+        padding: 1rem;
+    }
+}
+
+
+/**************************************** partie products *************************************************************/
+.products {
+    background: #5b6c78;
+}
+
+
+/* media queries partie product  */
+@media screen and (max-width:749px){
+    .products .grid_item {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width:750px){
+    
+    .products .grid_item {
+        max-width: 25%;
+        padding: 1rem;
+    }
+}
+
+
+/* partie contact */
+.contact {
+    background: #f5f5f5;
+}
+
+
+/* media queries partie contact  */
+@media screen and (max-width:749px){
+      
+
+}
+
+@media screen and (min-width:750px){
+    
+        
+    
+}
+
+/********************************************** partie footer  *************************************************************/
+footer {
+    
+    background: #555555;
+    text-align: center;
+    justify-content: space-between;
+ 
+}
+footer .grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+footer .grid_item {
+    max-width: 30%;
+}
+footer .logo {
+    text-align: left;
+}
+footer .f-socials {
+    display: inline-flex;
+ text-align: center;
+}
+footer .copy {
+    text-align: right;
+}
+
+
+
+/* media queries footer  */
+@media screen and (max-width:749px){
+  
+}
+
+
+@media screen and (min-width:750px){
+    
+    
 }
