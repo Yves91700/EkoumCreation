@@ -63,6 +63,16 @@ a {
 section {
     padding: 5.5rem 0;
 }
+.section-title {
+    text-transform: uppercase;
+    font-size: 3.8rem;
+ 
+}
+@media screen and (min-width:750px) {
+   .section-header {
+   text-align: center;
+   } 
+}
 
 
 
@@ -234,13 +244,21 @@ gap: 1px;
 }
 .services h3 {
     margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
 }
 
 
 
 /* media queries partie services  */
 @media screen and (max-width:749px){
-  
+  .services {
+    text-align: center;
+  }
+  .service_icon {
+   margin: 0 auto;
+  }
 }
 
 @media screen and (min-width:750px){
@@ -272,6 +290,9 @@ gap: 1px;
 @media screen and (max-width:749px){
     .products .grid_item {
         max-width: 90%;
+    }
+    .products {
+        text-align: center;
     }
 }
 
