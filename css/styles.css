@@ -83,7 +83,7 @@ section {
     border: 1px solid #555555;
     background: rgb(130, 135, 238);
     color: black;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 1;
     /* display: flex; */
@@ -126,12 +126,17 @@ gap: 1px;
 }
 .header a {
     text-decoration: none;
+    color: #000;
 }
 .header a:hover {
     cursor: pointer;
     transform: scale(1.2);
     color: red;
 }
+.socials {
+    display: flex;
+}
+
 
 /* media queries partie header  */
 @media screen and (max-width:749px){
@@ -142,10 +147,15 @@ gap: 1px;
    .navbar {
     display: none;
    }
+   .socials-right {
+   margin: 0 auto;
+}
 }
 
 @media screen and (min-width:750px){
-    
+   .socials .bars {
+        display: none;
+    }
   
 }
 
@@ -154,6 +164,7 @@ gap: 1px;
 
 .hero {
     background: #f5f5f5;
+    /* background: rgb(130, 135, 238); */
     background-image: image();
     padding: 1rem 0 0 0;
 }
@@ -168,7 +179,15 @@ gap: 1px;
 .hero .avatar {
     width: 100%;
     height: 400px;
-    border-radius: 30%;
+    border-radius: 50%;
+}
+.hero .left {
+    background-image: url(../images/african-g3c822bd17_1920.jpg);
+  width: 100%;  
+}
+.hero .right {
+    background: #1092ef;
+    
 }
 
 
@@ -191,7 +210,13 @@ gap: 1px;
 /******************************************* media queries partie about  *************************************/
 .about {
     background: rgb(130, 135, 238);
+    
     color: black;
+}
+.about .center {
+    /* background: blue; */
+    border-radius: 50%;
+    
 }
 .about .grid{
      display: flex;
@@ -200,9 +225,14 @@ gap: 1px;
 }
 .about .me {
     width: 100%;
+    border-radius: 50%;
 }
 .about .africa {
     width: 100%;
+    border-radius: 50%;
+}
+.about-me {
+    font-size: 2rem;
 }
 
 /* media queries partie about  */
@@ -277,7 +307,7 @@ gap: 1px;
 
 /**************************************** partie products *************************************************************/
 .products {
-    background: #5b6c78;
+    background: rgb(130, 135, 238);
 }
 
 .card_image{
@@ -308,25 +338,33 @@ gap: 1px;
 /* partie contact */
 .contact {
     background: #f5f5f5;
+    text-align: center;
 }
 
 
 /* media queries partie contact  */
 @media screen and (max-width:749px){
-      
+    .contact button {
+        all: unset;
+     } 
 
 }
 
 @media screen and (min-width:750px){
     
-        
+     .contact .mail {
+        text-align: center;
+     }   
+     .contact button {
+        all: unset;
+     }
     
 }
 
 /********************************************** partie footer  *************************************************************/
 footer {
     
-    background: #555555;
+    background: #5b6c78;
     text-align: center;
     justify-content: space-between;
  
@@ -335,28 +373,26 @@ footer {
 footer .grid {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
 }
-footer .grid_item {
-    max-width: 30%;
-}
+
 footer .logo {
-    width: 100px;
-    height: 100px;
-    text-align: left;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
 }
 footer .f-socials {
     padding: 2rem;
     display: inline-flex;
- text-align: center;
+ margin: 0 auto;
 }
 footer li {
     list-style-type: none;
     padding: 0.5rem;
 }
 footer .copy {
-    text-align: right;
+   margin: 0 auto;
 }
 
 
@@ -369,5 +405,7 @@ footer .copy {
 
 @media screen and (min-width:750px){
     
-    
+    footer .grid_item {
+        max-width: 30%;
+    }
 }
