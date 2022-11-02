@@ -177,7 +177,7 @@ nav .menu li {
     transition: all 0.4s;
   }
   .show-nav nav {
-    opacity: 1;
+    /* opacity: 1; */
     width: 70%;
     left: 0;
     z-index: 2;
@@ -217,6 +217,7 @@ nav .menu li {
     height: 400px;
     border-radius: 50%;
 }
+
 .hero .left {
     background-image: url(../images/african-g3c822bd17_1920.jpg);
   width: 100%;
@@ -236,8 +237,14 @@ nav .menu li {
 
 /* media queries partie hero */
 @media screen and (max-width:749px){
+    .hero .avatar {
+        width: 85%;
+        height: 350px;
+    }
    
 }
+
+
 
 @media screen and (min-width:750px){
    .hero_item {
