@@ -13,7 +13,7 @@ body {
   color: black;
   margin: 0;
   line-height: 1.6;
-
+  /* background-image: url(../images/paysage\ afrique.jpg); */
 }
 h1,
 h2,
@@ -83,7 +83,7 @@ section {
     border: 1px solid #555555;
     background: rgb(130, 135, 238);
     color: black;
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     z-index: 1;
     /* display: flex; */
@@ -138,6 +138,7 @@ gap: 1px;
 }
 
 
+
 /* media queries partie header  */
 @media screen and (max-width:749px){
     .header .logo {
@@ -145,11 +146,46 @@ gap: 1px;
         height: 50px;
     }
    .navbar {
-    display: none;
+    display: flex;
    }
    .socials-right {
    margin: 0 auto;
 }
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 55px;
+    left: 110%;
+    overflow: hidden;
+    opacity: 0;
+    width: 0;
+    /* height: calc(100vh - 55px); */
+    background: #f5f5f5;
+    transition: all 0.4s ease-out;
+}
+nav .menu li {
+    display: flex;
+    justify-content: center;
+  }
+  nav.menu a {
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+    transition: all 0.4s;
+  }
+  .show-nav nav {
+    opacity: 1;
+    width: 70%;
+    left: 0;
+    z-index: 2;
+  }
+  .bars {
+    background: rgb(130, 135, 238);
+    all: unset;
+  }
 }
 
 @media screen and (min-width:750px){
@@ -165,7 +201,7 @@ gap: 1px;
 .hero {
     background: #f5f5f5;
     /* background: rgb(130, 135, 238); */
-    background-image: image();
+    
     padding: 1rem 0 0 0;
 }
 .hero_item{
@@ -183,11 +219,14 @@ gap: 1px;
 }
 .hero .left {
     background-image: url(../images/african-g3c822bd17_1920.jpg);
-  width: 100%;  
+  width: 100%;
+  height: 450px;  
+ 
 }
 .hero .right {
     background: #1092ef;
-    
+    width: 100%;
+    height: 450px;  
 }
 
 
@@ -210,6 +249,7 @@ gap: 1px;
 /******************************************* media queries partie about  *************************************/
 .about {
     background: rgb(130, 135, 238);
+    /* background-image: url(../images/paysage\ afrique.jpg); */
     
     color: black;
 }
