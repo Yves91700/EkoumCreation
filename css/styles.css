@@ -97,8 +97,8 @@ gap: 1px;
 
 .header .logo {
 
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
    
 }
 .navbar li {
@@ -250,6 +250,10 @@ nav .menu li {
    .hero_item {
     flex: 1 0 50%;
    } 
+   .hero .avatar {
+    width: 85%;
+    height: 350px;
+}
   
 }
 
