@@ -10,12 +10,12 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem;
-  color: rgb(252, 250, 250);
+  color: rgb(2, 2, 2);
   margin: 0;
   line-height: 1.6;
-  background-image: url(../images/PUFF91700_website_african_mode_landing_page__ecommerce_ddf355de-d8c2-4b07-9b7f-a2442a5d3db0.jpeg);
+  /*background-image: url(../images/PUFF91700_website_african_mode_landing_page__ecommerce_ddf355de-d8c2-4b07-9b7f-a2442a5d3db0.jpeg);
   background-size: 100% 100%;
-  
+  background-color: transparent;*/
   
   
 }
@@ -27,8 +27,8 @@ h3,
 h4,
 h5,
 h6 {
-  /*color: #000;*/
-  color: rgb(252, 250, 250);
+  color: #000;
+  /* color: rgb(252, 250, 250); */
   font-family: "poppins", sans-serif;
   font-weight: 500;
   line-height: 1;
@@ -83,7 +83,7 @@ section {
 .header {
   width: 100%;
   border: 1px solid #555555;
-  /* background: rgb(130, 135, 238);*/
+  background: rgb(130, 135, 238);
   color: black;
   position: sticky;
   top: 0;
@@ -123,8 +123,8 @@ section {
 }
 .header a {
   text-decoration: none;
- /* color: #000;*/
-  color: rgb(252, 250, 250);
+ color: #000;
+  /* color: rgb(252, 250, 250); */
 }
 .header a:hover {
   cursor: pointer;
@@ -193,7 +193,7 @@ section {
 /*********************************************** partie hero ***********************************************/
 
 .hero {
-  /* background: #f5f5f5; */
+  background: #f5f5f5;
   /* background: rgb(130, 135, 238); */
 
   padding: 1rem 0 0 0;
@@ -214,12 +214,15 @@ section {
 
 .hero .left {
   /* background-image: url(../images/african-g3c822bd17_1920.jpg); */
-  /* background: #5b6c78; */
+  background: #5b6c78;
   width: 100%;
   height: 450px;
 }
 .hero .right {
   /* background: #1092ef; */
+  background-image: url(../images/PUFF91700_website_african_mode_landing_page__ecommerce_ddf355de-d8c2-4b07-9b7f-a2442a5d3db0.jpeg);
+  background-size: 100% 100%;
+  color: #f5f5f5;
   width: 100%;
   height: 450px;
 }
@@ -245,10 +248,10 @@ section {
 /******************************************* media queries partie about  *************************************/
 .about {
   /* background: rgb(130, 135, 238); */
-  /* background-image: url(../images/paysage\ afrique.jpg); */
+  background-image: url(../images/paysage\ afrique.jpg);
 
-  /* color: black; */
-  color: #f5f5f5;
+  color: black;
+  /* color: #f5f5f5; */
 }
 .about .center {
   /* background: blue; */
@@ -286,10 +289,10 @@ section {
 
 /* partie services */
 .services {
-  /* background: #dcd2d2; */
-  color:#f5f5f5;
+  background: #dcd2d2;
+  color:#070707;
   /* j'ai une bordure grise en attendant */
-  border: solid 2px #7e7c7c;
+  /* border: solid 2px #7e7c7c; */
 }
 .service_icon {
   display: flex;
@@ -336,9 +339,9 @@ section {
 }
 
 /**************************************** partie products *************************************************************/
-/*.products {
+.products {
   background: rgb(130, 135, 238);
-}*/
+}
 
 .card_image {
   width: 300px;
@@ -386,7 +389,7 @@ section {
 
 /********************************************** partie footer  *************************************************************/
 footer {
-  background: #f4f7f8;
+  background: #b4b4b4;
   text-align: center;
   justify-content: space-between;
   color: black;
